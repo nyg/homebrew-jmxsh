@@ -10,6 +10,12 @@ class Jmxsh < Formula
     regex(/^v?(\d+(?:\.\d+)+)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/nyg/homebrew-jmxsh/releases/download/jmxsh-1.2.3"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "d0de319b83ef5bca41541ecc33705f0199c1fff0317e489c24447c152b9e0c3b"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "8eba6ba5db60e9c9d46866888e802bf306bbc8ef7d00feff2ac7cd1b8a5d4d2d"
+  end
+
   depends_on "openjdk@25"
 
   def install
