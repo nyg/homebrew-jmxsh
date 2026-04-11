@@ -1,18 +1,29 @@
-# Nyg Jmxsh
+# homebrew-jmxsh
 
-## How do I install these formulae?
+Homebrew tap for [jmxsh](https://github.com/nyg/jmxsh) — an interactive command-line JMX client for monitoring and managing Java applications.
 
-`brew install nyg/jmxsh/<formula>`
+**Website:** [jmx.sh](https://jmx.sh)
 
-Or `brew tap nyg/jmxsh` and then `brew install <formula>`.
+## Installation
 
-Or, in a `brew bundle` `Brewfile`:
+```sh
+brew install nyg/jmxsh/jmxsh
+```
+
+Or tap first, then install:
+
+```sh
+brew tap nyg/jmxsh
+brew install jmxsh
+```
+
+Or in a [`Brewfile`](https://github.com/Homebrew/homebrew-bundle):
 
 ```ruby
 tap "nyg/jmxsh"
-brew "<formula>"
+brew "jmxsh"
 ```
 
-## Documentation
+## Usage
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Once installed, run `jmxsh` to start the interactive shell. See the [upstream documentation](https://github.com/nyg/jmxsh) for the full command reference.
