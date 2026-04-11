@@ -44,9 +44,11 @@ jobs:
             JAR_URL="https://github.com/nyg/jmxsh/releases/download/v${VERSION}/jmxsh-${VERSION}.jar"
           fi
 
-          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
-          echo "jar_url=$JAR_URL" >> "$GITHUB_OUTPUT"
-          echo "java_version=$JAVA_VERSION" >> "$GITHUB_OUTPUT"
+          {
+            echo "version=$VERSION"
+            echo "jar_url=$JAR_URL"
+            echo "java_version=$JAVA_VERSION"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Download JAR and compute SHA256
         id: sha
