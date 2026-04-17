@@ -24,6 +24,6 @@ class Jmxsh < Formula
   end
 
   test do
-    assert_match "[USAGE]", shell_output("#{bin}/jmxsh --help")
+    assert_match "jmxsh #{version}", shell_output("#{bin}/jmxsh --version")
   end
 end
